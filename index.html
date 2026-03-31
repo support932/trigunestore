@@ -1,66 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Trigun E-Store</title>
+  <title>Trigune E-Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
 
-/* Responsive text */
-h1 {
-  font-size: 6vw;
-}
+    header {
+      padding: 15px;
+      text-align: center;
+      background: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-p {
-  font-size: 3.5vw;
-}
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-button {
-  padding: 12px 25px;
-  font-size: 3.5vw;
-  background: #ffcc00;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+    .hero h1 {
+      font-size: 28px;
+    }
 
-/* Desktop fix */
-@media (min-width: 768px) {
-  h1 {
-    font-size: 40px;
-  }
-  p {
-    font-size: 18px;
-  }
-  button {
-    font-size: 16px;
-  }
-}
-</style>
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
 
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 10px;
+      background: yellow;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Trigun E-Store</h1>
+<header>Trigune E-Store</header>
 
-<p>Premium Mobile Accessories & Combo Kits 🚀</p>
+<div class="hero">
+  <h1>Premium Mobile Accessories</h1>
+  <p>Best Quality at Affordable Price</p>
+</div>
 
-<p>High quality | Best price | Fast delivery</p>
+<div class="products">
 
-<button>Buy Now</button>
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h3>Mobile Case</h3>
+    <p>Strong & Stylish</p>
+    <button class="btn">Buy Now</button>
+  </div>
 
-<p style="margin-top:20px;">
-📧 support@trigunestore.com <br>
-📞 +91 7075399762
-</p>
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h3>Charging Cable</h3>
+    <p>Fast Charging</p>
+    <button class="btn">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h3>Screen Guard</h3>
+    <p>Full Protection</p>
+    <button class="btn">Buy Now</button>
+  </div>
+
+</div>
+
+<footer>
+  support@trigunestore.com
+</footer>
 
 </body>
 </html>
