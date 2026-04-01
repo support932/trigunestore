@@ -7,105 +7,71 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
-    }
-
-    header {
-      padding: 15px;
-      text-align: center;
-      background: black;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .hero h1 {
-      font-size: 28px;
-    }
-
-    .products {
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: #1c1c1c;
-      border-radius: 10px;
-      padding: 15px;
-      width: 250px;
+      align-items: center;
       text-align: center;
+      color: white;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #0f2027, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
     }
 
-    .card img {
-      width: 100%;
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .glow {
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+    }
+
+    .box {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 30px;
       border-radius: 10px;
-    }
-
-    .btn {
-      margin-top: 10px;
-      padding: 10px;
-      background: yellow;
-      color: black;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.7;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
     }
   </style>
 </head>
 
 <body>
 
-<header>Trigune E-Store</header>
-
-<div class="hero">
-  <h1>Premium Mobile Accessories</h1>
-  <p>Best Quality at Affordable Price</p>
-</div>
-
-<div class="products">
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250" />
-    <h3>Mobile Case</h3>
-    <p>Strong & Stylish</p>
-    <button class="btn">Buy Now</button>
+  <div class="container">
+    <div class="box">
+      <h1>Trigune E-Store</h1>
+      <h2 class="glow">🚀 Launching Soon</h2>
+      <p>Premium Mobile Accessories</p>
+      <p>We are building something amazing for you</p>
+      <p>Stay tuned 🔥</p>
+    </div>
   </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250" />
-    <h3>Charging Cable</h3>
-    <p>Fast Charging</p>
-    <button class="btn">Buy Now</button>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250" />
-    <h3>Screen Guard</h3>
-    <p>Full Protection</p>
-    <button class="btn">Buy Now</button>
-  </div>
-
-</div>
-
-<footer>
-  support@trigunestore.com
-</footer>
 
 </body>
 </html>
